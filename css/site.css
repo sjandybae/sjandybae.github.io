@@ -1,0 +1,103 @@
+:root {
+    --main-color: #2bb9c5;
+    --main-color-dark: #26a5b0;
+    --main-color-darker: #22929b;
+    --acc-color: #ff5deb;
+    --acc-color-dark: #fa28e0;
+    --acc-color-darker: #fa0fdd;
+}
+
+.btn-creative {
+    color: white;
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+.btn-creative:hover,
+.btn-creative:focus,
+.btn-creative:active,
+.btn-creative.active {
+    color: white;
+    background-color: var(--main-color-dark);
+    border-color: var(--main-color-darker);
+}
+.btn-creative.disabled:hover,
+.btn-creative.disabled:focus,
+.btn-creative.disabled:active,
+.btn-creative.disabled.active,
+.btn-creative[disabled]:hover,
+.btn-creative[disabled]:focus,
+.btn-creative[disabled]:active,
+.btn-creative[disabled].active,
+fieldset[disabled] .btn-creative:hover,
+fieldset[disabled] .btn-creative:focus,
+fieldset[disabled] .btn-creative:active,
+fieldset[disabled] .btn-creative.active {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+.btn-creative.focus, .btn-creative:focus {
+    box-shadow: 0 0 0 0.2rem rgba(56, 186, 193, 0.5);
+}
+.btn-technical {
+    color: white;
+    background-color: var(--acc-color);
+    border-color: var(--acc-color);
+}
+.btn-technical:hover,
+.btn-technical:focus,
+.btn-technical:active,
+.btn-technical.active {
+    color: white;
+    background-color: var(--acc-color-dark);
+    border-color: var(--acc-color-darker);
+}
+.btn-technical.disabled:hover,
+.btn-technical.disabled:focus,
+.btn-technical.disabled:active,
+.btn-technical.disabled.active,
+.btn-technical[disabled]:hover,
+.btn-technical[disabled]:focus,
+.btn-technical[disabled]:active,
+.btn-technical[disabled].active,
+fieldset[disabled] .btn-technical:hover,
+fieldset[disabled] .btn-technical:focus,
+fieldset[disabled] .btn-technical:active,
+fieldset[disabled] .btn-technical.active {
+    background-color: var(--acc-color);
+    border-color: var(--acc-color);
+}
+.btn-technical.focus, .btn-technical:focus {
+    box-shadow: 0 0 0 0.2rem rgba(222, 96, 213, 0.5);
+}
+
+
+.navbar {
+    background-color: white;
+}
+
+#main {
+    background-color: #f5f5f5;
+}
+
+#main .row div {
+    padding: 1em;
+}
+
+
+.btn-circle { 
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    text-align: center;
+} 
+
+section.row:nth-child(odd) div:nth-child(even) {
+    background-color: lightgray;
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 2em;
+}
