@@ -1,1 +1,1 @@
-# sjandybae.github.io
+# This is a WIP portfolio website.
