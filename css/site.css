@@ -76,12 +76,9 @@ fieldset[disabled] .btn-technical.active {
 }
 
 #main {
-    background-color: #f5f5f5;
+    background-color: white;
 }
 
-#main .row div {
-    padding: 1em;
-}
 
 
 .btn-circle { 
@@ -91,8 +88,22 @@ fieldset[disabled] .btn-technical.active {
     text-align: center;
 } 
 
-section.row:nth-child(odd) div:nth-child(even) {
-    background-color: lightgray;
+section {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+section.default {
+    background-color: #f5f5f5;
+}
+section:nth-child(even) {
+    background-color: #efefef;
+}
+section.black {
+    background-color: black;
+    color: white;
+}
+section.black .figure-caption {
+    color: #cacaca;
 }
 
 

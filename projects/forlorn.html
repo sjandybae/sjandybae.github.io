@@ -36,23 +36,128 @@
         
         <!--THE MAIN CONTENT OF THIS PAGE-->
         <div id="main">
-            <section class="row">
-                <div class="col-md-3">1</div>
-                <div class="col-md-3">2</div>
-                <div class="col-md-3">4</div>
-                <div class="col-md-3">3</div>
+            <section class="default">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-8 offset-md-2 text-center">
+                            <h2>Virtual Reality Experience</h2>
+                            <span>June 2017</span>
+                            <img class="img-fluid mt-3 mb-3" src="../assets/forlorn/featured.png" alt="Forlorn">
+                            <p>Tools: <em>Unity+C#, Oculus Rift</em></p>
+                        </div>
+                        <div class="col-12">
+                            <p>For a course in Virtual Reality, I worked with two peers to design a VR experience using the <span class="skill">Oculus Rift</span> and <span class="skill">Unity</span>. Specifically, we developed an environment in which a user could explore an abandoned city partially submerged in water, steering a motorboat to find clues towards discovering the cause of the disaster. Our goal was to immerse the player as a character in our narrative and generate emotional responses from being lost and alone, especially through taking advantage of the Oculus Rift and Unity’s VR features.</p>
+                            <p>As the team member most experienced in programming, I was responsible for creating the <span class="skill">C# scripts</span>, including movement and interaction via the Oculus Rift and an Xbox 360 controller. In later phases of development, I created scripts for specific narrative events requiring animation such as reticle scanning and water rising.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <h3>Overview Video</h3>
+                        </div>
+                        <div class="col-12 text-center">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Z7n1I0WNsOE" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <section class="row">
-                <div class="col-md-3">1</div>
-                <div class="col-md-3">2</div>
-                <div class="col-md-3">4</div>
-                <div class="col-md-3">3</div>
+            <section class="black">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-5">
+                            <h3>Ideation</h3>
+                            <p>Through <span class="skill">affinity diagramming</span>, our team hovered around various ideas before narrowing down on an experience where the viewer explores a vast, mysterious environment via motorboat, especially to act as a solution to the Oculus Rift’s physical movement restrictions.</p>
+                            <p>As our goal was also to implement a narrative that various clues in the environment will contribute towards, we made the setting of our experience be an abandoned, flooded city, not only for aesthetic purposes, but to create a linear path of clues for the player to follow before finally reaching the end. However, this proved to be a significant challenge for us as we wanted the viewer to be able to <span class="skill">move freely</span>, but also <span class="skill">follow our narrative</span> in a prompt and consistent pace.</p>
+                        </div>
+                        <div class="col-md-7">
+                            <figure class="figure">
+                                <img src="../assets/forlorn/1.jpg" class="figure-img img-fluid"><figcaption class="figure-caption">Affinity diagramming various ideas.</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <section class="row">
-                <div class="col-md-3">1</div>
-                <div class="col-md-3">2</div>
-                <div class="col-md-3">4</div>
-                <div class="col-md-3">3</div>
+            <section class="default">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-8 offset-md-2 mb-3">
+                            <h3>Environment Design</h3>
+                            <p>After I completed the scripts and initial assets needed for the viewer to move around a body of water, our team worked collectively to design the abandoned city the viewer will explore using mostly free assets available on the Unity Store. Since it was important that there was a clear path to where we wanted the viewer to see the ending, the buildings were arranged somewhat unrealistically to create a large path that could literally be followed to reach the final destination. </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <figure class="figure">
+                                <img src="../assets/forlorn/2.png" class="figure-img img-fluid">
+                                <figcaption class="figure-caption">Initial development in Unity.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-sm-6">
+                            <figure class="figure">
+                                <img src="../assets/forlorn/22.png" class="figure-img img-fluid">
+                                <figcaption class="figure-caption">Initial development in Unity.</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-md-8 offset-md-2 mb-3">
+                            <p>However, there were also four “clues” in the form of objects that, when examined, play clips of dialogue that expand on the narrative and clarify the eventual ending. Since we wanted to generate a sense of discovery with these clues, we put them in separate side paths branching from the main path so the viewer would have to explore to find them. To facilitate discovery of these clues, we gave each of them looping <span class="skill">sound effects</span> such as car alarms or radio songs that would get louder as the viewer approached them.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="default">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <figure class="figure">
+                                <img src="../assets/forlorn/3.png" class="figure-img img-fluid"><figcaption class="figure-caption">Initial testing.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Iteration</h3>
+                            <p>Feedback we received during the first stages of development generally involved the environment’s layout. Our testers tended to get lost in the city, unsure of what our “main” path was, and reached areas that were not meant to be accessible. To resolve these issues, one of my team members added flashing lights to streetlights that were part of the main path, and I <span class="skill">created barricades</span> for openings between buildings surrounding the main and side paths, using objects such as flipped cars or cabinets to keep them interesting and relevant to the disaster-themed narrative.</p>
+                            <p>Other issues we encountered included frame rate drops, motion sickness, and glitches when traversing the obstacle ridden waters. Although I was able to <span class="skill">adjust the scripts</span> to handle the glitches and the frame rate issue got resolved when a team member spotted and fixed the cause, we were unable to do much about the motion sickness as our narrative setting required the water to have mid-sized waves, which we found causes seasickness with or without the boat bobbing up and down with them. However, our instructors understood that motion sickness is a recurring problem in all VR applications, and did not criticize us for being unable to resolve this.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="default">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <h3>Reflections</h3>
+                            <p>The project was a great success at our class’s public showcase, especially due to our installation’s use of smelly beach tarps and a real inflatable boat to facilitate <span class="skill">sensory immersion</span>. Our teaching staff were particularly impressed by the implementation of a <span class="skill">deep, engaging narrative</span> about climate change, and the use of VR’s immersiveness to generate <span class="skill">strong emotional reactions</span> towards this real-world issue.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <figure class="figure">
+                                <img src="../assets/forlorn/5.jpg" class="figure-img img-fluid"><figcaption class="figure-caption">Our team's installation at the project showcase.</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="default">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <figure class="figure">
+                                <img src="../assets/forlorn/4.jpg" class="figure-img img-fluid"><figcaption class="figure-caption">Team photo taken after the project showcase's conclusion.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-md-6">
+                            <p>As the course was only seven weeks long and my first time working with Unity, it was a <span class="skill">significant challenge</span> for me to learn a new creative software fast enough to contribute to a big project. Fortunately, my team members were very diligent and capable, with one member having prior experience with Unity and the other being able to construct engaging narratives. In any other team, I may have struggled to meet the course’s requirements so I will always be grateful to have had the opportunity to work with and exchange trust between such talented peers.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="default">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <a href="../projects">Return to Projects</a>
+                        </div>
+                    </div>
+                </div>
             </section>
         </div>
         <!--END OF MAIN CONTENT-->
