@@ -1,3 +1,4 @@
+/* Custom Colouring */
 :root {
     --main-color: #2bb9c5;
     --main-color-dark: #26a5b0;
@@ -6,7 +7,6 @@
     --acc-color-dark: #fa28e0;
     --acc-color-darker: #fa0fdd;
 }
-
 .btn-creative {
     color: white;
     background-color: var(--main-color);
@@ -70,6 +70,7 @@ fieldset[disabled] .btn-technical.active {
     box-shadow: 0 0 0 0.2rem rgba(222, 96, 213, 0.5);
 }
 
+/* Styling across all pages */
 
 .navbar {
     background-color: white;
