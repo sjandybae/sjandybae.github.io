@@ -76,15 +76,6 @@ fieldset[disabled] .btn-technical.active {
     text-align: center;
 }
 
-
-.navbar {
-    background-color: white;
-}
-
-#main {
-    background-color: white;
-}
-
 .card {
     background-color: transparent;
     height: 20em;
@@ -133,7 +124,12 @@ fieldset[disabled] .btn-technical.active {
     border-radius: 1rem;
 }
 
-
+.navbar {
+    background-color: white;
+}
+#main {
+    background-color: white;
+}
 section {
     padding-top: 2em;
     padding-bottom: 2em;
@@ -144,14 +140,37 @@ section.default {
 section:nth-child(even) {
     background-color: #efefef;
 }
-section.black {
-    background-color: black;
+section.accent {
+    background-color: var(--main-color-darker);
     color: white;
 }
-section.black .figure-caption {
+section.accent .figure-caption {
     color: #cacaca;
 }
 
+.roles-list strong, .roles-list em {
+    color: var(--main-color-darker);
+}
+.skills-list li {
+    width: 5em;
+}
+.skill-icon {
+    max-width: 50px;
+    height: auto;
+}
+.skill-icon + .skill-description {
+/*    display: none;*/
+    font-size: 0.75em;
+    color: silver;
+}
+@media only screen and (max-width: 767px) {
+    .skill-icon + .skill-description {
+/*        display: block;*/
+    }
+}
+.video-div iframe {
+    width: 100%;
+}
 
 footer {
     background-color: black;
