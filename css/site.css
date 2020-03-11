@@ -76,6 +76,9 @@ fieldset[disabled] .btn-technical.active {
     text-align: center;
 }
 
+body {
+    font-family: 'Cabin', sans-serif;
+}
 .card {
     background-color: transparent;
     height: 20em;
@@ -147,9 +150,22 @@ section.accent {
 section.accent .figure-caption {
     color: #cacaca;
 }
+section.bg-image {
+    color: white;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 .roles-list strong, .roles-list em {
     color: var(--main-color-darker);
+}
+@media only screen and (min-width: 576px) {
+    .homepage-skills li {
+        width: 4em;
+    }
 }
 .skills-list li {
     width: 5em;
@@ -162,11 +178,21 @@ section.accent .figure-caption {
 /*    display: none;*/
     font-size: 0.75em;
     color: silver;
+    margin-bottom: 0.5em;
 }
 @media only screen and (max-width: 767px) {
     .skill-icon + .skill-description {
 /*        display: block;*/
     }
+}
+.skill {
+    font-weight: bolder;
+}
+.skill.c {
+    color: var(--main-color);
+}
+.skill.t {
+    color: var(--acc-color);
 }
 .video-div iframe {
     width: 100%;
