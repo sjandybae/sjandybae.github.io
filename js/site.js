@@ -1,19 +1,24 @@
 $( document ).ready(function() {
-    console.log( "hi!" );
+    $("#bioSection").hide();
     $("#creativeBio").hide();
     $("#technicalBio").hide();
     
     //$("#main").append("<div>jquery was here</div>")
     
     $("#homepageCreativeButton").click(function() {
+        $("#bioSection").show();
         $("#technicalBio").hide();
         $("#creativeBio").show();
         $('html, body').animate({
-            scrollTop: $("#creativeBio").offset().top
+            scrollTop: $("#bioSection").offset().top - $(".navbar.sticky-top").outerHeight()
         }, 500);
     });
     $("#homepageTechnicalButton").click(function() {
+        $("#bioSection").show();
         $("#creativeBio").hide();
         $("#technicalBio").show();
+        $('html, body').animate({
+            scrollTop: $("#bioSection").offset().top - $(".navbar.sticky-top").outerHeight()
+        }, 500);
     });
 });
