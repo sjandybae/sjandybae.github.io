@@ -152,12 +152,16 @@ section.accent .figure-caption {
 }
 section.bg-image {
     color: white;
+    background-color: black;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+.action-icon {
+    width: 5em;
+    height: auto;
+}
 
 .roles-list strong, .roles-list em {
     color: var(--main-color-darker);
