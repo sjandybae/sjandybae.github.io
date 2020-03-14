@@ -11,12 +11,24 @@
         <!--Header-->
         <nav class="navbar navbar-expand-md navbar-light sticky-top">
             <a class="navbar-brand" href="/">
-                <img id="main-logo" src="../assets/AndyBaeLogo.png">
+                <img id="mainLogo" src="../assets/AndyBaeLogo.png">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <br>
+            <div class="d-flex flex-row order-2 order-md-3">
+                <ul class="navbar-nav flex-row">
+                    <li class="nav-item">
+                        <button id="creativeButton" class="btn btn-creative btn-circle">Creative</button>
+                    </li>
+                    <li class="nav-item">
+                        <button id="technicalButton" class="btn btn-technical btn-circle">Technical</button>
+                    </li>
+                </ul>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            
+            <div class="collapse navbar-collapse order-3 order-md-2" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="../projects">Projects</a>
@@ -33,6 +45,7 @@
                     </li>
                 </ul>
             </div>
+            
         </nav>
         
         <!--THE MAIN CONTENT OF THIS PAGE-->
@@ -59,8 +72,8 @@
                     </div>
                     <div class="row align-items-center">
                         <div class="col-12 col-md-6 mb-4">
-                            <p>For a course in Virtual Reality, I worked with two peers to design a VR experience using the <span class="skill">Oculus Rift</span> and <span class="skill">Unity</span> in which a user could explore an abandoned city partially submerged in water, steering a motorboat to find clues towards discovering the cause of the disaster. Our goal was to immerse the player as a character in our narrative and generate emotional responses from being lost and alone.</p>
-                            <p>As the team member most experienced in programming, I was responsible for creating the <span class="skill">C# scripts</span>, including movement and interaction via the Oculus Rift and an Xbox 360 controller. In later phases of development, I created scripts for specific narrative events requiring animation such as reticle scanning and water rising.</p>
+                            <p>For a course in Virtual Reality, I worked with two peers to design a VR experience in which a user could explore an abandoned city partially submerged in water, steering a motorboat to find clues towards discovering the cause of the disaster. Our goal was to <span class="c skill">immerse the player as a character in our narrative</span> and generate emotional responses from being lost and alone.</p>
+                            <p>As the team member most experienced in programming, I was responsible for <span class="t skill">creating the C# scripts</span>, including movement and interaction via the Oculus Rift and an Xbox 360 controller. In later phases of development, I created scripts for specific narrative events requiring animation such as reticle scanning and water rising.</p>
                         </div>
                         <div class="col-12 col-md-6 mb-4 text-center">
                             <div class="video-div">

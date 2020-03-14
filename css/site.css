@@ -69,11 +69,20 @@ fieldset[disabled] .btn-technical.active {
 .btn-technical.focus, .btn-technical:focus {
     box-shadow: 0 0 0 0.2rem rgba(222, 96, 213, 0.5);
 }
-.btn-circle { 
+.btn-circle-large { 
     width: 100px;
     height: 100px;
     border-radius: 50px;
     text-align: center;
+}
+.btn-circle { 
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    text-align: center;
+    font-size: 0.65em;
+    padding: 0;
+    margin-right: 0.5em;
 }
 
 body {
@@ -130,9 +139,17 @@ body {
 .navbar {
     background-color: white;
 }
-#main-logo {
+#mainLogo {
     width: 10rem;
     height: auto;
+}
+@media only screen and (max-width: 576px) {
+    #mainLogo {
+        padding-left: 15%;
+        padding-right: 15%;
+        width: 100%;
+        height: auto;
+    }
 }
 #main {
     background-color: white;
@@ -188,18 +205,13 @@ section.bg-image {
     color: silver;
     margin-bottom: 0.5em;
 }
-@media only screen and (max-width: 767px) {
-    .skill-icon + .skill-description {
-/*        display: block;*/
-    }
-}
 .skill {
     font-weight: bolder;
 }
-.skill.c {
+.skill.c.active {
     color: var(--main-color);
 }
-.skill.t {
+.skill.t.active {
     color: var(--acc-color);
 }
 .video-div iframe {

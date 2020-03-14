@@ -21,4 +21,11 @@ $( document ).ready(function() {
             scrollTop: $("#bioSection").offset().top - $(".navbar.sticky-top").outerHeight()
         }, 500);
     });
+    
+    $("#creativeButton").click(function() {
+        $(".skill.c").toggleClass("active");
+    });
+    $("#technicalButton").click(function() {
+        $(".skill.t").toggleClass("active");
+    });
 });
