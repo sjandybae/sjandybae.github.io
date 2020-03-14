@@ -2,9 +2,9 @@
     --main-color: #2bb9c5;
     --main-color-dark: #26a5b0;
     --main-color-darker: #22929b;
-    --acc-color: #ff5deb;
-    --acc-color-dark: #fa28e0;
-    --acc-color-darker: #fa0fdd;
+    --acc-color: #ff76e4;
+    --acc-color-dark: #e56bcd;
+    --acc-color-darker: #c65cb1;
 }
 
 .btn-creative {
@@ -129,6 +129,10 @@ body {
 
 .navbar {
     background-color: white;
+}
+#main-logo {
+    width: 10rem;
+    height: auto;
 }
 #main {
     background-color: white;
