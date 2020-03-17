@@ -180,7 +180,7 @@ section.bg-image {
     background-size: cover;
 }
 .action-icon {
-    width: 5em;
+    width: 3em;
     height: auto;
 }
 
@@ -201,7 +201,7 @@ section.bg-image {
 }
 .skill-icon + .skill-description {
 /*    display: none;*/
-    font-size: 0.75em;
+    font-size: 0.6em;
     color: silver;
     margin-bottom: 0.5em;
 }
