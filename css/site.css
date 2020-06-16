@@ -222,6 +222,17 @@ section.bg-image {
 .skill.t.active {
     color: var(--acc-color);
 }
+
+.testimonial .figure {
+    width: 100%;
+    text-align: center;
+}
+.testimonial img {
+    max-width: 3em;
+    width: 100%;
+}
+
+
 .video-div iframe {
     width: 100%;
 }
