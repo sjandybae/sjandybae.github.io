@@ -3,8 +3,15 @@ $( document ).ready(function() {
     $("#creativeBio").hide();
     $("#technicalBio").hide();
     
-    //$("#main").append("<div>jquery was here</div>")
-    
+    $(".homepage-skills li").removeClass("active");
+    $("#homepageCreativeButton").hover(function() {
+        $(".homepage-skills.c li").css("transition", "0.5s");
+        $(".homepage-skills.c li").addClass("active");
+    });
+    $("#homepageTechnicalButton").hover(function() {
+        $(".homepage-skills.t li").css("transition", "0.5s");
+        $(".homepage-skills.t li").addClass("active");
+    });
     var firstClick = true;
     
     $("#homepageCreativeButton").click(function() {

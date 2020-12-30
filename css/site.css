@@ -10,7 +10,8 @@
 .btn-creative {
     color: white;
     background-color: var(--main-color);
-    border-color: var(--main-color);
+    border-color: white;
+    border-width: 3px;
 }
 .btn-creative:hover,
 .btn-creative:focus,
@@ -41,7 +42,8 @@ fieldset[disabled] .btn-creative.active {
 .btn-technical {
     color: white;
     background-color: var(--acc-color);
-    border-color: var(--acc-color);
+    border-color: white;
+    border-width: 3px;
 }
 .btn-technical:hover,
 .btn-technical:focus,
@@ -143,6 +145,7 @@ body {
     width: 10rem;
     height: auto;
 }
+/*
 @media only screen and (max-width: 576px) {
     #mainLogo {
         padding-left: 15%;
@@ -151,6 +154,7 @@ body {
         height: auto;
     }
 }
+*/
 #main {
     background-color: white;
 }
@@ -200,6 +204,14 @@ section.bg-image {
         width: 4em;
     }
 }
+@media only screen and (min-width: 768px) {
+    .homepage-skills li {
+        opacity: 0;
+    }
+    .homepage-skills li.active {
+        opacity: 1;
+    }
+}
 .skills-list li {
     width: 4em;
 }
@@ -240,5 +252,5 @@ section.bg-image {
 footer {
     background-color: black;
     color: white;
-    padding: 2em;
+    padding: 1em;
 }
