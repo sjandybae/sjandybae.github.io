@@ -228,10 +228,10 @@ section.bg-image {
 .skill {
     font-weight: bolder;
 }
-.skill.c.active {
+.skill.c {
     color: var(--main-color);
 }
-.skill.t.active {
+.skill.t {
     color: var(--acc-color);
 }
 
