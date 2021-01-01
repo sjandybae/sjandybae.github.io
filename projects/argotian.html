@@ -65,13 +65,14 @@
                     </div>
                     <div class="row align-items-center">
                         <div class="col-12 col-md-6 mb-4">
-                            <p>Argotian is a language learning system where users engage in conversation with intelligent characters capable of responding to human speech. To that end, a unique dialogue system was needed to reflect that intelligence by being able to interpret free-form speech and return an appropriate response that is relevant to the story and character settings.</p>
-                            <p>I joined this project after the initial design for the dialogue system was already established, and initially as the primary writer for the intelligent dialogue responses. But through experience in the entire production cycle for this content, I also thought of and implemented optimization methods, and assisted with re-evaluating the design for cost and scalability.</p>
+                            <p><strong>For more information on this product, visit the <a href="https://www.argolingo.com/" target="_blank">official website</a>!</strong></p>
+                            <p>Argotian is a language learning system where users engage in conversation with intelligent characters capable of responding to human speech. To that end, a unique dialogue system was needed to interpret free-form speech and return a characteristically appropriate response that is relevant to each point in the story</p>
+                            <p>I joined this project as a dialogue writer after the initial design for the dialogue system was already implemented. But through experience in the entire production cycle for this unique content, I also helped <span class="t skill">optimize our processes</span>, including re-evaluating the design for cost and scalability.</p>
                         </div>
                         <div class="col-12 col-md-6 mb-4">
-                            <figure class="figure">
-                                <img src="../assets/argotian/featured.png" class="figure-img img-fluid"><figcaption class="figure-caption">User conversing with an AIC (Artificially Intelligent Character).</figcaption>
-                            </figure>                    
+                            <div class="video-div">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/8jWo43Ua1ZY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -81,8 +82,7 @@
                     <div class="row align-items-center">
                         <div class="col-md-6 order-md-last">
                             <h3>Production</h3>
-                            <p>My contributions began with first getting an overview of the game’s established narrative, especially in regards to each character’s role and knowledge in it, and reviewing a protocol on writing dialogue for the AI system at the time.</p>
-                            <p>My role in this was initial dialogue production, which required me to always stay ahead of my co-workers handling quality assurance, adaptation, or implementation. Fortunately, I learned and wrote the specialized dialogue at a very fast pace, eventually leading me to complete a great majority of the character dialogue needed.</p>
+                            <p>My contributions began with first getting an overview of the game’s established narrative, especially in regards to each character’s role and knowledge in it, and reviewing a protocol on writing dialogue for the AI system at the time. Within a day, I was writing dialogue into a spreadsheet, having to always stay ahead of my co-workers handling quality assurance, adaptation, or implementation.</p>
                         </div>
                         <div class="col-md-6">
                             <figure class="figure">
@@ -97,12 +97,12 @@
                     <div class="row align-items-center">
                         <div class="col-md-6">
                             <h3>Integration</h3>
-                            <p>Due to my experience with Unity, I was next involved in the integration of the actual dialogue system with the dialogue I helped write. As there was no compatibility with Google Sheets and the Pixel Crushers Dialogue System, I joined a co-worker in manually entering every single dialogue line into a node for the dialogue system. This incompatibility also meant there were several standards I needed to memorize and follow to ensure compatibility with the rest of the game, and finding any errors I made would be difficult to notice.</p>
-                            <p>Even after we completed the data entry, new feature requirements would emerge from the rest of the pipeline, and my co-worker and I continued to encounter other incompatibility issues that required manually entered solutions. We eventually succeeded in bringing the entire system to a working, testable state without neglecting to document the challenges we overcame and protocol improvements for next time we would do this.</p>
+                            <p>Due to my experience with Unity, I was next involved in adding the dialogue content I helped write into the actual dialogue system. This unfortunately required my co-workers and me to manually enter and link up each line of data into the system, keeping track of and merging our work via <span class="t skill">Git branches</span>.</p>
+                            <p>Even after we completed the data entry, new feature requirements would emerge from the rest of the pipeline, causing incompatibility issues we would need to manually resolve. We eventually succeeded in bringing the entire system to a working, testable state without neglecting to document the challenges we overcame and <span class="t skill">protocol improvements</span> we would do next time.</p>
                         </div>
                         <div class="col-md-6">
                             <figure class="figure">
-                                <img src="../assets/argotian/2.PNG" class="figure-img img-fluid"><figcaption class="figure-caption">Initial prototype development.</figcaption>
+                                <img src="../assets/argotian/2.PNG" class="figure-img img-fluid"><figcaption class="figure-caption">Manually setting up the dialogue data and logic of the dialogue system.</figcaption>
                             </figure>
                         </div>
                     </div>
@@ -113,12 +113,11 @@
                     <div class="row align-items-center">
                         <div class="col-md-6 order-md-last">
                             <h3>Testing</h3>
-                            <p>Concurrently with dialogue system development, I began the first few rounds of testing, which involved using a third-party AI system, to interpret voice input and match them with the relevant responses. I repeatedly “trained” or optimized the AI to better handle free-form speech, especially since there are numerous ways of saying the same thing or asking the same question.</p>
-                            <p>Being the one who wrote a majority of the characters’ responses, I was in a good position to look at player questions, and determine what responses the characters currently have could logically answer them.</p>
+                            <p>Concurrently with dialogue system development, I began the first wave of user testing. Being the one who wrote a majority of the characters’ responses, I was in a good position to look at player questions, and <span class="c skill">determine what responses</span> the characters could answer them with. I <span class="t skill">repeatedly optimized the AI</span> to better handle free-form speech, especially numerous ways to ask the same question.</p>
                         </div>
                         <div class="col-md-6">
                             <figure class="figure">
-                                <img src="../assets/argotian/3.PNG" class="figure-img img-fluid"><figcaption class="figure-caption">Testing meteor spawn algorithm with minimap.</figcaption>
+                                <img src="../assets/argotian/3.PNG" class="figure-img img-fluid"><figcaption class="figure-caption">Testing a character's responses to a user's speech input.</figcaption>
                             </figure>
                         </div>
                     </div>
@@ -127,30 +126,14 @@
             <section class="default">
                 <div class="container">
                     <div class="row align-items-center">
-                        <div class="col-md-6 order-md-last">
-                            <h3>Iteration</h3>
-                            <p>Several issues became prevalent at this stage such as speech to text recognition, syntactic similarities among player utterances, unfavourable conditions set in the Dialogue System to pick the “correct” response accurately, appropriateness of the dialogue responses I wrote, valid questions spoken by other early testers that weren’t currently being handled, and so on.</p>
-                            <p>Once again, we were using this system in a manner it was not designed to do, and many of these were compatibility issues that required consulting with other team members to make decisions that would directly impact user experience. We addressed each issue as they appeared, and used this experience to better plan the narrative and technical design of the next Argotian story.</p>
-                        </div>
                         <div class="col-md-6">
-                            <figure class="figure">
-                                <img src="../assets/argotian/" class="figure-img img-fluid"><figcaption class="figure-caption">???</figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="default">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-md-6 order-md-last">
                             <h3>Reflections</h3>
-                            <p>Having been through every part of the production pipeline for the dialogue system’s content, I became a reliable consultant in the company for new features involving character conversations, and pitched various optimizations for the initial design process that would make content production more effective. The most significant take-away from this project, however, is my involvement in integrating a wide range of skills across several team members. Before joining the company, I had no experience with AI training, Unity dialogue systems, or even Google Sheets in a deep capacity. It was through working with other knowledgeable and patient professionals that I was able to learn how each system worked and why they were set up that way fast enough to make significant contributions towards our end goals.</p>
-                            <p></p>
+                            <p>Having been through every part of the production pipeline for the dialogue system’s content, I eventually began to <span class="t skill">propose and plan out new feature updates</span> that would address each of our overall system's weaknesses. From doing this, I became <span class="c skill">something like an expert</span> among my co-workers for anything related to the dialogue system and flow logic.</p>
+                            <p>Before joining Virtro, I had no experience with AI training, Unity dialogue systems, or even Google Sheets in a deep capacity. It was through working with other knowledgeable and patient professionals that I was able to <span class="t skill">learn how each system worked</span> fast enough to make significant contributions.</p>
                         </div>
                         <div class="col-md-6">
                             <figure class="figure">
-                                <img src="../assets/argotian/" class="figure-img img-fluid"><figcaption class="figure-caption">???</figcaption>
+                                <img src="../assets/argotian/4.jpg" class="figure-img img-fluid"><figcaption class="figure-caption">Overview shot of one of the immersive spaces of Argotian.</figcaption>
                             </figure>
                         </div>
                     </div>
