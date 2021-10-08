@@ -240,6 +240,10 @@ section.bg-image {
     color: var(--acc-color);
 }
 
+.testimonial {
+    margin-left: 3em;
+    margin-right: 3em;
+}
 .testimonial .figure {
     width: 100%;
     text-align: center;
@@ -248,7 +252,10 @@ section.bg-image {
     max-width: 3em;
     width: 100%;
 }
-
+#testimonialCarousel .carousel-control-next,
+#testimonialCarousel .carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
 
 .video-div iframe {
     width: 100%;
