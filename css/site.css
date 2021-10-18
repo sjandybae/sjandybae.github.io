@@ -137,6 +137,20 @@ body {
     filter:brightness(50%);
     border-radius: 1rem;
 }
+.card-text {
+    font-size: 0.9em;
+}
+.card-tags {
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    margin-right: 0.6em;
+    line-height: 1.1em;
+    font-weight: bolder;
+}
+.card-tags code {
+    color: white;
+}
 
 .navbar {
     background-color: white;
@@ -195,6 +209,17 @@ section.bg-image {
 .roles-list strong, .roles-list em {
     color: var(--main-color-darker);
 }
+.tags-list code {
+    margin-right: 0.2em;
+    padding: 0.3em;
+    padding-left: 0.7em;
+    padding-right: 0.7em;
+    border-radius: 1em;
+    background-color: var(--main-color-dark);
+    color: white;
+    line-height: 2.5em;
+}
+
 .footer-icon {
     width: 100%;
     height: auto;
