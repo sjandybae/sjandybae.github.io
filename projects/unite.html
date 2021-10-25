@@ -67,7 +67,7 @@
                         <div class="col-12 col-md-6 mb-4">
                             <p><strong>Our submission for the GMTK 2021 Game Jam can be found <a href="https://sjandybae.itch.io/unite" target="_blank">here</a>!</strong></p>
                             <p>For a 48 hour game jam, two peers and I challenged ourselves to build a game entirely from scratch using the game engine, <span class="t skill">Godot</span>. With the theme "Joined Together", we brainstormed and agreed on a concept where the player collects and commands a swarm of fighting units that must grow more numerous to take on tougher enemies and bosses.</p>
-                            <p>With one of my peers handling the main Godot programming and the other making pixel art for the whole game, I primarily contributed my skills in project management, being the team member most familiar with <span class="t skill">Git repositories</span>.</p>
+                            <p>With one of my peers handling the main Godot programming and the other making pixel art for the whole game, I primarily contributed my skills in <span class="c skill">project management</span>, being the team member most familiar with <span class="t skill">Git repositories</span>.</p>
                         </div>
                         <div class="col-12 col-md-6 mb-4 text-center">
                             <figure class="figure">
@@ -80,14 +80,14 @@
             <section class="accent">
                 <div class="container">
                     <div class="row align-items-center">
+                        <div class="col-md-6 order-md-last">
+                            <h3>Brainstorming</h3>
+                            <p>With only 48 hours to work, we had to quickly decide on the game's concept with a brainstorming session that took place over a Discord voice call. Some of our ideas included physically linked playable characters and defensive towers sharing a power grid. We eventually decided to explore commandable allies commonly seen in real-time strategy games, simplified to a core loop where the player must recruit allies to conquer enemy groups with sheer force of numbers.</p>
+                        </div>
                         <div class="col-md-6">
                             <figure class="figure">
                                 <img src="../assets/unite/1.png" class="figure-img img-fluid"><figcaption class="figure-caption">Early concept sketch.</figcaption>
                             </figure>
-                        </div>
-                        <div class="col-md-6">
-                            <h3>Brainstorming</h3>
-                            <p>With only 48 hours to work, we had to quickly decide on the game's concept with a brainstorming session that took place over a Discord voice call. Some of our ideas included physically linked playable characters and defensive towers sharing a power grid. We eventually decided to explore commandable allies commonly seen in real-time strategy games, simplified to a core loop where the player must recruit allies to conquer enemy groups with sheer force of numbers.</p>
                         </div>
                     </div>
                 </div>
@@ -97,7 +97,7 @@
                     <div class="row align-items-center">
                         <div class="col-md-7">
                             <h3>Development</h3>
-                            <p>With very little time, each of us immediately began working on the major assets required for the concept: pixel art, ally AI behaviour, and--from personal interest--procedural map generation. By the first day, we were able to get all required sprites, an algorithm that randomly creates trees and hills with colliders for us, and basic ally units that would follow the player.</p>
+                            <p>With very little time, each of us immediately began working on the major assets required for the concept: pixel art, ally AI behaviour, and--from personal interest--<span class="t skill">procedural map generation</span>. By the first day, we were able to get all required sprites, an algorithm that randomly creates trees and hills with colliders for us, and basic ally units that would follow the player.</p>
                         </div>
                         <div class="col-md-5">
                             <figure class="figure">
@@ -113,18 +113,18 @@
                         </div>
                         <div class="col-md-7">
                             <p>Early in the second day, we began incorporating the ability to command ally units to move to a target marker, placeable via mouse click. The main challenge we encountered was getting the allies to continue to not overlap each other (to maintain the image of being a large army) while still getting within range to attack enemies with their short melee attacks.</p>
-                            <p>The foundation of other important features were also completed during the second day. This includes adding enemy camps to the procedural map generation, effectively allowing for various "difficulties" with larger groups of enemies naturally needing more allies to successfully conquer.</p>
+                            <p>The foundation of other important features were also completed during the second day. This includes adding enemy camps to the procedural map generation, effectively allowing for <span class="c skill">various difficulties</span> with larger groups of enemies naturally needing more allies to successfully conquer.</p>
                         </div>
                     </div>
                     <div class="row align-items-center">
-                        <div class="col-md-6">
-                            <p> The map generation also got random ally units scattered around needing to be "collected" by the player avatar in order to test recruitment, but this ultimately was kept in the final submission as, while we were able to get "ghost" units working, we did not have time to get defeated enemy camps to convert into new allies--as detailed in our initial game design.</p>
-                            <p>The original game design also detailed three uniquely distinct types of allies: sword users, bow users, and magic users. As such, we also created a toggle for the marker system to handle commanding each of these groups to fight enemies they would have an inherent advantage against. However, this toggle was ultimate omitted from the final submission since we were unable to get projectiles such as arrows and magic working in time.</p>
-                        </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 order-md-last">
                             <figure class="figure">
                                 <img src="../assets/unite/4.png" class="figure-img img-fluid"><figcaption class="figure-caption">Sending an army to attack an enemy camp.</figcaption>
                             </figure>
+                        </div>
+                        <div class="col-md-6">
+                            <p> The map generation was also updated to have random ally units scattered around to be "collected" by the player avatar in order to test recruitment, but this was ultimately kept in the final submission because while we were able to get <span class="c skill">"ghost" units</span> working, we did not have time to get defeated enemy camps to convert into new allies--as written in our initial game design.</p>
+                            <p>The original game design also detailed three uniquely distinct types of allies: sword users, bow users, and magic users. As such, we also created a toggle for the marker system to handle commanding each of these groups to <span class="c skill">fight enemies they would have an advantage against</span>. However, this toggle was omitted from the final submission since we were unable to get projectiles such as arrows and magic working in time.</p>
                         </div>
                     </div>
                 </div>
@@ -132,19 +132,19 @@
             <section class="default">
                 <div class="container">
                     <div class="row align-items-center">
-                        <div class="col-md-5">
+                        <div class="col-md-6 order-md-last">
+                            <h3>Reflections</h3>
+                            <p>As described in the above section, several game features were unable to be implemented within the 48 hours we were given, and we had to settle for adjusting the build to be a demo of our concept of <span class="c skill">commandable allies in a procedurally generated world</span>. It was ambitious of us to attempt to create high-level technical features like procedural map generation and AI unit behaviour when most of us were new to Godot. Much of our 48 hours were spent researching, testing, and tuning these unfamiliar algorithms to serve our purposes.</p>
+                        </div>
+                        <div class="col-md-6">
                             <figure class="figure">
                                 <img src="../assets/unite/5.png" class="figure-img img-fluid"><figcaption class="figure-caption">A sketch of the level design, featuring a dragon at the center of the map that could be defeated once the player collects a significant number of allies.</figcaption>
                             </figure>
                         </div>
-                        <div class="col-md-7">
-                            <h3>Reflections</h3>
-                            <p>As described in the above section, several game features were unable to be implemented within the 48 hours we were given, and we had to settle for adjusting the build to be a demo of our concept of commandable allies in a procedurally generated world. It was ambitious of us to attempt to create high-level technical features like procedural map generation and AI unit behaviour when most of us were new to Godot. Much of our 48 hours were spent researching, experimenting, failing, and tweaking these unfamiliar algorithms to serve our purposes.</p>
-                        </div>
                     </div>
                     <div class="row align-items-center">
                         <div class="col-md-7">
-                            <p>Our team agreed that this game jam was a good lesson in setting scale and planning properly, especially when we need to include time to ramp up our skills. Nevertheless, our incomplete submission received some positive feedback for our overall aesthetic and concept, so we ended the project confident that the game design has potential if we had more time.</p>
+                            <p>Our team agreed that this game jam was a good lesson in <span class="t skill">setting scale and planning properly</span>, especially when we need to include time to ramp up our skills. Nevertheless, our incomplete submission received some positive feedback for our overall aesthetic and concept, so we ended the project confident that <span class="c skill">the game design has potential</span> given enough time.</p>
                         </div>
                         <div class="col-md-5">
                             <figure class="figure">
