@@ -66,7 +66,8 @@
                     <div class="row align-items-center">
                         <div class="col-12 col-md-6 mb-4">
                             <p><strong>Our submission for the Spooky Jam 2021 can be found <a href="https://hatbringer.itch.io/the-park-inbetween" target="_blank">here</a>!</strong></p>
-                            <p>.</p>
+                            <p>For a 7 day Halloween-themed game jam, two peers and I remotely teamed up to make a simple game using the <span class="t skill">Godot engine</span>. The end result was a simple 3D first-person shooter game where the player must navigate a mysterious, dark area haunted by deadly ghosts to find keys that will open the way to freedom.</p>
+                            <p>I was invited to join as a <span class="c skill">game designer</span>, especially to use my <span class="t skill">project management</span> and <span class="t skill">Git repo management</span> skills to bring our team's collective work into a unified and complete game for our portfolios.</p>
                         </div>
                         <div class="col-12 col-md-6 mb-4 text-center">
                             <div class="video-div">
@@ -81,11 +82,11 @@
                     <div class="row align-items-center">
                         <div class="col-md-6 order-md-last">
                             <h3>Brainstorming</h3>
-                            <p>.</p>
+                            <p>Brainstorming around the announced theme of “Afterlife”, we mostly considered core loops and mechanics centered around reincarnation, specifically in that your player avatar can “die” in the game, but this leads to the game continuing instead of ending. However, we backtracked upon realizing two things: our team’s overall familiarity with Godot was still new, and setting up other game elements to support the "fun" of a concept where the player must seek ways to essentially "lose" the game was out of scope. We ultimately decided to explore Godot’s 3D capabilities by creating a basic first-person shooter and expanding from there.</p>
                         </div>
                         <div class="col-md-6">
                             <figure class="figure">
-                                <img src="../assets/park_inbetween/1.jpg" class="figure-img img-fluid"><figcaption class="figure-caption">.</figcaption>
+                                <img src="../assets/park_inbetween/1.jpg" class="figure-img img-fluid"><figcaption class="figure-caption">Using Miro as a whiteboard for brainstorming remotely.</figcaption>
                             </figure>
                         </div>
                     </div>
@@ -96,32 +97,59 @@
                     <div class="row align-items-center">
                         <div class="col-md-7">
                             <h3>Development</h3>
-                            <p>.</p>
+                            <p>Development began immediately after brainstorming, with each of us ramping up skills needed for the rest of development. I created the <span class="t skill">Git repo</span> and gave an overview on how everyone's work will be connected and managed, while the rest of the team worked on the first person movement to introduce Godot to our team member who was new to the engine.</p>
                         </div>
-                        <div class="col-md-5">
+                        <div class="col-md-5 text-center">
                             <figure class="figure">
-                                <img src="../assets/park_inbetween/2.gif" class="figure-img img-fluid"><figcaption class="figure-caption">.</figcaption>
+                                <img src="../assets/park_inbetween/2.gif" class="figure-img img-fluid"><figcaption class="figure-caption text-left">Getting basic 3D first-person movement functional.</figcaption>
                             </figure>
                         </div>
                     </div>
                     <div class="row align-items-center">
-                        <div class="col-md-5">
+                        <div class="col-md-6">
                             <figure class="figure">
-                                <img src="../assets/park_inbetween/3.jpg" class="figure-img img-fluid"><figcaption class="figure-caption">.</figcaption>
+                                <img src="../assets/park_inbetween/3.jpg" class="figure-img img-fluid"><figcaption class="figure-caption">Another Miro whiteboard to narrow down the game's final concept.</figcaption>
                             </figure>
                         </div>
-                        <div class="col-md-7">
-                            <p>.</p>
+                        <div class="col-md-6">
+                            <p>After completing the first person movement, we had another conversation to determine how to proceed with making the "game". However, it was only after we completed a fully functional terrain when we finally landed on a game concept featuring open exploration to find multiple "keys", especially since we were considering other ideas such surviving waves of enemies or following a linear route with a finish line.</p>
+                            
                         </div>
                     </div>
                     <div class="row align-items-center">
                         <div class="col-md-6 order-md-last">
                             <figure class="figure">
-                                <img src="../assets/park_inbetween/4.gif" class="figure-img img-fluid"><figcaption class="figure-caption">.</figcaption>
+                                <img src="../assets/park_inbetween/4.gif" class="figure-img img-fluid"><figcaption class="figure-caption">First versions of the gun, the enemies, and the rendering filter.</figcaption>
                             </figure>
                         </div>
                         <div class="col-md-6">
-                            <p>.</p>
+                            <p>From there, I recommended the team split into making basic required features (i.e. shooting and killing enemies, picking up items, GUI) and advanced creative features (i.e. "flat 3D" objects, rendering filters, enemy movement via NavMesh pathfinding) based on each teammate's interests and experience using Godot. This decision resulted in the whole team's familiarity with Godot and the project's specific code and assets getting <span class="c skill">synchronized in the first two days</span>, which I would later find was essential in bringing the project to completion in the final stretch.</p>
+                            <p>In the final two days, I also got <span class="t skill">involved in the game's development</span> by sourcing and implementing some sound effects and 3D assets we were lacking.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="default">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 order-md-last">
+                            <h3>Level Design</h3>
+                            <p>The biggest obstacle we encountered late in development is that while all the features and objects were ready, there was no level design to help guide players towards the locations of the various keys. My idea was to have <span class="c skill">arrows on the ground discoverable with the flashlight</span>, and we attempted to implement a level design based on the terrain's layout. However, we realized early that it would be a long and difficult process due to the terrain's massive size.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <figure class="figure">
+                                <img src="../assets/park_inbetween/5.jpg" class="figure-img img-fluid"><figcaption class="figure-caption">A conceptual sketch of the level design (left) and an actual level design sketch over the original terrain (right) that ended up going unused.</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <p>With about 24 hours remaining, our teammate newest to Godot stepped up and created a level design from scratch by using simple planes and measuring how far the player can see with the flashlight at any given time. We then adjusted the terrain around this level design prototype, resulting in a solid game players can explore freely, yet encounter <span class="c skill">specific "scary" situations</span>, each carefully thought out with the placement of the key, its arrows, and the surrounding walls and enemies.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <figure class="figure">
+                                <img src="../assets/park_inbetween/7.png" class="figure-img img-fluid"><figcaption class="figure-caption">The level design prototype made before the terrain was adjusted to support it.</figcaption>
+                            </figure>
                         </div>
                     </div>
                 </div>
@@ -131,21 +159,21 @@
                     <div class="row align-items-center">
                         <div class="col-md-6 order-md-last">
                             <h3>Reflections</h3>
-                            <p>As described in the above section, several game features were unable to be implemented within the 48 hours we were given, and we had to settle for adjusting the build to be a demo of our concept of <span class="c skill">commandable allies in a procedurally generated world</span>. It was ambitious of us to attempt to create high-level technical features like procedural map generation and AI unit behaviour when most of us were new to Godot. Much of our 48 hours were spent researching, testing, and tuning these unfamiliar algorithms to serve our purposes.</p>
+                            <p>As the "game designer" of the project, I gained significant insight into the meaning of this role when the team reflected on the past week after our submission. We agreed that the level design should have been considered much earlier, but also that as game designer, it should have been up to me to <span class="c skill">pitch the initial game concept</span> based on everyone's interests. Since it was a game jam, I felt it was important to make sure everyone was having fun making what they wanted to make, but admittedly, this resulted in a very disorganized process as we each acted on our own ideas for technical features and gameplay moments.</p>
                         </div>
                         <div class="col-md-6">
                             <figure class="figure">
-                                <img src="../assets/park_inbetween/5.jpg" class="figure-img img-fluid"><figcaption class="figure-caption">A sketch of the level design, featuring a dragon at the center of the map that could be defeated once the player collects a significant number of allies.</figcaption>
+                                <img src="../assets/park_inbetween/6.gif" class="figure-img img-fluid"><figcaption class="figure-caption">Working demonstration of the enemies' NavMesh pathfinding.</figcaption>
                             </figure>
                         </div>
                     </div>
                     <div class="row align-items-center">
-                        <div class="col-md-7">
-                            <p>Our team agreed that this game jam was a good lesson in <span class="t skill">setting scale and planning properly</span>, especially when we need to include time to ramp up our skills. Nevertheless, our incomplete submission received some positive feedback for our overall aesthetic and concept, so we ended the project confident that <span class="c skill">the game design has potential</span> given enough time.</p>
+                        <div class="col-md-6">
+                            <p>Nevertheless, we were all very proud of what we accomplished, and I am confident I made smart decisions that brought us here. Having our less experienced team member build the basic project allowed him to <span class="c skill">collaborate confidently</span> with our more advanced programmer, and the project may not have been submitted in time if I did not <span class="c skill">set the scope</span>, reject extraneous feature ideas, and define development priorities throughout the development pipeline.</p>
                         </div>
-                        <div class="col-md-5">
+                        <div class="col-md-6">
                             <figure class="figure">
-                                <img src="../assets/park_inbetween/6.gif" class="figure-img img-fluid"><figcaption class="figure-caption">Concept sketch. Despite not being implemented, sprites for the bows, magic staffs, and the dragon boss were created and ready.</figcaption>
+                                <img src="../assets/park_inbetween/8.jpg" class="figure-img img-fluid"><figcaption class="figure-caption">A working textbox for tutorial and narrative purposes made using a third party plug-in implemented in the last hours of the jam.</figcaption>
                             </figure>
                         </div>
                     </div>
