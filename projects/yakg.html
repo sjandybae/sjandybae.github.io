@@ -37,11 +37,11 @@
         
         <!--THE MAIN CONTENT OF THIS PAGE-->
         <div id="main">
-            <section class="bg-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../assets/yakg/featured.png);">
+            <section class="bg-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../assets/yakg/featured_cropped.png);">
                 <div class="container">
                     <div class="row mt-5 mb-5">
                         <div class="col-12 text-center">
-                            <h2>Yet Another Killing Game</h2>
+                            <h2>YAKG</h2>
                             <span>December 2022 | Visual Novel</span>
                         </div>
                     </div>
@@ -51,14 +51,15 @@
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-12 col-md-6 mt-4">
-                            <p class="roles-list"><strong>Main Role:</strong> Game Designer<br /><em>Subroles:</em> Project Manager, Git Manager, Level Designer</p>
-                            <p class="tags-list"><code>#FPS</code> <code>#Godot</code> <code>#GameDesign</code> <code>#GameJam</code><code>#7days</code></p>
+                            <p class="roles-list"><strong>Main Role:</strong> Creator<br /><em>Subroles:</em> Programming, Narrative, Project Manager</p>
+                            <p class="tags-list"><code>#Ren'Py</code> <code>#Python</code> <code>#VisualNovel</code> <code>#MultipleEndings</code></p>
                         </div>
                         <div class="col-12 col-md-6 mt-4 text-center">
                             <ul class="list-inline skills-list">
-                                <li class="list-inline-item"><img src="../assets/gamedesignicon.png" class="skill-icon"><p class="skill-description">Game Design</p></li>
+                                <li class="list-inline-item"><img src="../assets/storytellingicon.png" class="skill-icon"><p class="skill-description">Storytelling</p></li>
+                                <li class="list-inline-item"><img src="../assets/directionicon.png" class="skill-icon"><p class="skill-description">Direction</p></li>
+                                <li class="list-inline-item"><img src="../assets/graphicdesignicon.png" class="skill-icon"><p class="skill-description">Graphic Art</p></li>
                                 <li class="list-inline-item"><img src="../assets/leadershipicon.png" class="skill-icon"><p class="skill-description">Leadership</p></li>
-                                <li class="list-inline-item"><img src="../assets/documentationicon.png" class="skill-icon"><p class="skill-description">Design Docs</p></li>
                                 <li class="list-inline-item"><img src="../assets/giticon.png" class="skill-icon"><p class="skill-description">Git</p></li>
                             </ul>
                         </div>
@@ -66,12 +67,16 @@
                     <div class="row align-items-center">
                         <div class="col-12 col-md-6 mb-4">
                             <p><strong>Play the Day 1 Demo for yourself <a href="https://junkakeru.itch.io/yet-another-killing-game-demo" target="_blank">here</a>!</strong></p>
-                            <p>Personal</p>
+                            <p>As a short-term personal project, I gave myself a time limit to make a visual novel, a simple narrative-focused game with dialogue options leading to alternate endings. This allowed me to quickly learn the limits of "Ren'Py", an engine based on <span class="t skill">Python</span>, and how to manage other parts of production such as sourcing music and commissioning artwork.</p>
+                            <p>The game demo was successfully completed one week ahead of schedule, and has received an overall positive reception, primarily due to efforts marketing the game in itch.io and Reddit.</p>
                         </div>
                         <div class="col-12 col-md-6 mb-4 text-center">
                             <div class="video-div">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/1QgwaqQI4LU" frameborder="0" allowfullscreen></iframe>
-                            </div>                            
+                                <iframe frameborder="0" src="https://itch.io/embed/1828922?bg_color=ffffff" width="552" height="167"><a href="https://junkakeru.itch.io/yet-another-killing-game-demo">Yet Another Killing Game - Day 1 Demo by Jun Kakeru</a></iframe>
+                            </div>
+                            <figure class="figure">
+                                <img src="../assets/yakg/0.png" class="figure-img img-fluid">
+                            </figure>
                         </div>
                     </div>
                 </div>
@@ -80,12 +85,14 @@
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-md-6 order-md-last">
-                            <h3>Brainstorming</h3>
-                            <p>Brainstorming around the announced theme of “Afterlife”, we mostly considered core loops and mechanics centered around reincarnation, specifically in that your player avatar can “die” in the game, but this leads to the game continuing instead of ending. However, we backtracked upon realizing two things: our team’s overall familiarity with Godot was still new, and setting up other game elements to support the "fun" of a concept where the player must seek ways to essentially "lose" the game was out of scope. We ultimately decided to explore Godot’s 3D capabilities by creating a basic first-person shooter and expanding from there.</p>
+                            <h3>Early Stages</h3>
+                            <p>The whole story (including beyond the demo) was planned out in a Google Doc with detailed notes for key story beats and clues for the overarching mystery plot. I also what dialogue choices cause the story to diverge in this step.
+                            </p>
+                            <p>Using an application called "Custom Cast", I made early designs for what I imagined for the characters' appearances, and used PhotoShop to incorporate these designs as placeholder sprites during initial prototyping. Placeholder backdrop images were quickly found through online internet searches.</p>
                         </div>
                         <div class="col-md-6">
                             <figure class="figure">
-                                <img src="../assets/park_inbetween/1.jpg" class="figure-img img-fluid"><figcaption class="figure-caption">Using Miro as a whiteboard for brainstorming remotely.</figcaption>
+                                <img src="../assets/yakg/1.png" class="figure-img img-fluid"><figcaption class="figure-caption">Planning and assembling the first prototype.</figcaption>
                             </figure>
                         </div>
                     </div>
@@ -94,85 +101,88 @@
             <section class="default">
                 <div class="container">
                     <div class="row align-items-center">
-                        <div class="col-md-7">
-                            <h3>Development</h3>
-                            <p>Development began immediately after brainstorming, with each of us ramping up skills needed for the rest of development. I created the <span class="t skill">Git repo</span> and gave an overview on how everyone's work will be connected and managed, while the rest of the team worked on the first person movement to introduce Godot to our team member who was new to the engine.</p>
+                        <div class="col-lg-5 col-md-6">
+                            <h3>Prototyping</h3>
+                            <p>Within days, I quickly made a playable prototype in Ren'Py to implement and test the branching narrative system I had planned (i.e. which decisions would lead to which endings). Dialogue was written at a first draft level, and there were no facial expressions or music.</p>
+                            <p>I opened a Git repo for backup purposes, as well as the ability to resume work on other devices. This repo would later become vital in development as a way to <span class="t skill">version visual and audio assets</span>, even if I was the sole contributor.</p>
                         </div>
-                        <div class="col-md-5 text-center">
+                        <div class="col-lg-7 col-md-6 text-center">
                             <figure class="figure">
-                                <img src="../assets/park_inbetween/2.gif" class="figure-img img-fluid"><figcaption class="figure-caption text-left">Getting basic 3D first-person movement functional.</figcaption>
+                                <img src="../assets/yakg/2.png" class="figure-img img-fluid"><figcaption class="figure-caption text-left">Investigating the kitchen in an early prototype.</figcaption>
                             </figure>
                         </div>
                     </div>
                     <div class="row align-items-center">
-                        <div class="col-md-6">
+                        <div class="col-md-6 text-center">
                             <figure class="figure">
-                                <img src="../assets/park_inbetween/3.jpg" class="figure-img img-fluid"><figcaption class="figure-caption">Another Miro whiteboard to narrow down the game's final concept.</figcaption>
+                                <img src="../assets/yakg/3.png" class="figure-img img-fluid"><figcaption class="figure-caption text-left">The "Game Over" screen and prompt to restart.</figcaption>
                             </figure>
                         </div>
                         <div class="col-md-6">
-                            <p>After completing the first person movement, we had another conversation to determine how to proceed with making the "game". However, it was only after we completed a fully functional terrain when we finally landed on a game concept featuring open exploration to find multiple "keys", especially since we were considering other ideas such surviving waves of enemies or following a linear route with a finish line.</p>
+                            <p>The first prototype ended in "failure" as all of my playtesters could barely reach one ending, and did not want to loop around and try to get other endings--which was in fact crucial for the story and game progression. The feedback I received instead revolved around <span class="c skill">improving player retention</span>, such as adding more dialogue options, make the speaker of the current dialogue line more obvious, etc. </p>
+                            <p>As a visual novel’s “fun” is completely reliant on engaging with the text and story, improving player retention became top priority, if only as a means to truly test the core ideas of the gameplay and narrative.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="default">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 order-md-last">
+                            <figure class="figure">
+                                <img src="../assets/yakg/4.png" class="figure-img img-fluid"><figcaption class="figure-caption">Using Source Filmmaker to create backdrops.</figcaption>
+                            </figure>
+                        </div>
+                        <div class="col-md-6">
+                            <h3>Production</h3>
+                            <p>With a self-imposed deadline of “the end of 2022”, I began a production pipeline with the goal of refining the prototype into a final playable demo that could be shared online. I <span class="c skill">planned scope carefully</span>, considering that this would be roughly 6 months of time and energy outside of my full-time day job.</p>
+                            <p>Besides narrative, my work involved finding royalty-free music and sound effects online, crafting background art using <span class="c skill">Source Filmmaker</span> and <span class="c skill">PhotoShop</span>, and studying <span class="t skill">Python</span> and Ren'Py programming techniques to customize the experience from Ren'Py's defaults.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="accent">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 order-md-last">
+                            <p>The character sprites and UI elements were beyond my ability, so I utilized Fiverr commissions and other connections to get character designs, special icons and windows, and eventually final character sprites with the necessary expression variants.</p>
+                            <p>I organized this “art pipeline” to be parallel with my own work, using spreadsheets and mock-ups to communicate my ideas to the artists and track their progress over 6 months of production.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <figure class="figure">
+                                <img src="../assets/yakg/5.png" class="figure-img img-fluid"><figcaption class="figure-caption">A main character's design, from early concepts (left) to a final in-game sprite (right).</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="default">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <p>During production, I repeatedly took WIP screenshots and recordings to keep the UI and character artists aware of how their art relates to everything else, and what adjustments need to be made.</p>
+                            <p>Editing and proofreading the dialogue was the final step of production as at this stage, facial expressions, visual effects, animations, sound effects, and music could be cued and directed as well. Even after adding entirely new dialogue and scenes, the script was finalized around the same time as final art assets were delivered, and the entire project was <span class="c skill">completed one week ahead of schedule</span>.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <figure class="figure">
+                                <img src="../assets/yakg/6.png" class="figure-img img-fluid"><figcaption class="figure-caption">A WIP screenshot with UI and a newer backdrop to help the character artist determine shading for the final sprites.</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="default">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-6 order-md-last">
+                            <h3>Release</h3>
                             
-                        </div>
-                    </div>
-                    <div class="row align-items-center">
-                        <div class="col-md-6 order-md-last">
-                            <figure class="figure">
-                                <img src="../assets/park_inbetween/4.gif" class="figure-img img-fluid"><figcaption class="figure-caption">First versions of the gun, the enemies, and the rendering filter.</figcaption>
-                            </figure>
-                        </div>
-                        <div class="col-md-6">
-                            <p>From there, I recommended the team split into making basic required features (i.e. shooting and killing enemies, picking up items, GUI) and advanced creative features (i.e. "flat 3D" objects, rendering filters, enemy movement via NavMesh pathfinding) based on each teammate's interests and experience using Godot. This decision resulted in the whole team's familiarity with Godot and the project's specific code and assets getting <span class="c skill">synchronized in the first two days</span>, which I would later find was essential in bringing the project to completion in the final stretch.</p>
-                            <p>In the final two days, I also got <span class="t skill">involved in the game's development</span> by sourcing and implementing some sound effects and 3D assets we were lacking.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="default">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-md-6 order-md-last">
-                            <h3>Level Design</h3>
-                            <p>The biggest obstacle we encountered late in development is that while all the features and objects were ready, there was no level design to help guide players towards the locations of the various keys. My idea was to have <span class="c skill">arrows on the ground discoverable with the flashlight</span>, and we attempted to implement a level design based on the terrain's layout. However, we realized early that it would be a long and difficult process due to the terrain's massive size.</p>
+                            <p>Marketing was done in the following month, involving Reddit, Twitter, and some contacts I had with YouTube and Twitch platforms. Initial downloads were dishearteningly minimal until a post in a specific community on Reddit brought it to 100+ within a week. This became a lesson learned in <span class="c skill">strategically targeting a demographic</span> who would be most likely interested in the game’s specific genre.</p>
+                            <p>Thanks to those 100+ downloads, I finally obtained true playtest data via a Google Form linked in the game, containing valuable feedback I plan to act on for the final release.</p>
                         </div>
                         <div class="col-md-6">
                             <figure class="figure">
-                                <img src="../assets/park_inbetween/5.jpg" class="figure-img img-fluid"><figcaption class="figure-caption">A conceptual sketch of the level design (left) and an actual level design sketch over the original terrain (right) that ended up going unused.</figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="row align-items-center">
-                        <div class="col-md-6">
-                            <p>With about 24 hours remaining, our teammate newest to Godot stepped up and created a level design from scratch by using simple planes and measuring how far the player can see with the flashlight at any given time. We then adjusted the terrain around this level design prototype, resulting in a solid game players can explore freely, yet encounter <span class="c skill">specific "scary" situations</span>, each carefully thought out with the placement of the key, its arrows, and the surrounding walls and enemies.</p>
-                        </div>
-                        <div class="col-md-6">
-                            <figure class="figure">
-                                <img src="../assets/park_inbetween/7.png" class="figure-img img-fluid"><figcaption class="figure-caption">The level design prototype made before the terrain was adjusted to support it.</figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="default">
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-md-6 order-md-last">
-                            <h3>Reflections</h3>
-                            <p>As the "game designer" of the project, I gained significant insight into the meaning of this role when the team reflected on the past week after our submission. We agreed that the level design should have been considered much earlier, but also that as game designer, it should have been up to me to <span class="c skill">pitch the initial game concept</span> based on everyone's interests. Since it was a game jam, I felt it was important to make sure everyone was having fun making what they wanted to make, but admittedly, this resulted in a very disorganized process as we each acted on our own ideas for technical features and gameplay moments.</p>
-                        </div>
-                        <div class="col-md-6">
-                            <figure class="figure">
-                                <img src="../assets/park_inbetween/6.gif" class="figure-img img-fluid"><figcaption class="figure-caption">Working demonstration of the enemies' NavMesh pathfinding.</figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="row align-items-center">
-                        <div class="col-md-6">
-                            <p>Nevertheless, we were all very proud of what we accomplished, and I am confident I made smart decisions that brought us here. Having our less experienced team member build the basic project allowed him to <span class="c skill">collaborate confidently</span> with our more advanced programmer, and the project may not have been submitted in time if I did not <span class="c skill">set the scope</span>, reject extraneous feature ideas, and define development priorities throughout the development pipeline.</p>
-                        </div>
-                        <div class="col-md-6">
-                            <figure class="figure">
-                                <img src="../assets/park_inbetween/8.jpg" class="figure-img img-fluid"><figcaption class="figure-caption">A working textbox for tutorial and narrative purposes made using a third party plug-in implemented in the last hours of the jam.</figcaption>
+                                <img src="../assets/yakg/7.png" class="figure-img img-fluid"><figcaption class="figure-caption">Screenshot of the final game demo.</figcaption>
                             </figure>
                         </div>
                     </div>
