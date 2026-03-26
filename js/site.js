@@ -68,3 +68,7 @@ $(function() {
         $('#imagemodal').modal('show');
     });
 });
+
+$('.carousel').carousel({
+  interval: 10000
+});

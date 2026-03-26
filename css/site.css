@@ -291,3 +291,10 @@ footer {
     color: white;
     padding: 1em;
 }
+.text-outline {
+    color: white; /* Text color */
+    text-shadow: -1px -1px 0 #000, /* Black outline color */
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+}
